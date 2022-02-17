@@ -1,21 +1,14 @@
 
-body {
-    font-family: 'Montserrat',
-        sans-serif;
-}
-
-/* main font */
-main {
-    font-family: 'Roboto',
-        sans-serif;
-}
-
-/* expance side background color */
+/* total expense bg color and border*/
 .income {
     background-color: #F6F5FA;
+    border: 2px solid coral;
 
 }
 
 .expense-header {
     color:  #1E90FF;
+}
+img{
+    border: 2px solid coral;
 }
