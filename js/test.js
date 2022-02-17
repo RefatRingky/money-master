@@ -14,7 +14,7 @@ function updateAmount(inputField) {
     }
 
 }
-/* Cost caculations  */
+/* Total monthly expense caculations  */
 function costCaculations() {
     const foodCost = updateAmount('food');
     const rentCost = updateAmount('rent');
@@ -23,14 +23,14 @@ function costCaculations() {
     return inTotalCost;
 }
 
-/* Balance caculations */
+/* Balance & expense caculations */
 function balanceCalc() {
     const income = updateAmount('income')
     const balance = income - costCaculations();
     return balance;
 }
 
-/* Savings Caculations */
+/* Savings & remaining amount Caculations */
 function save() {
     const income = updateAmount('income')
     const savings = updateAmount('save')
@@ -38,7 +38,7 @@ function save() {
     return savingsAmount;
 }
 
-/* caculations button add Event Listener Handle*/
+/* caculations of the total expense*/
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
     const monthlyCost = costCaculations();
@@ -59,7 +59,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     }
 })
 
-/* save button add Even tListener Handle */
+/* saving the rest amount*/
 document.getElementById('save-btn').addEventListener('click', function () {
     const totalbalance = balanceCalc();
     const totalSave = save();
