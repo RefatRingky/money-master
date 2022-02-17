@@ -12,6 +12,73 @@
     <header>
         <h2>My Monthly Expenses Site</h2>
     </header>
+    <main>
+        <section class="pt-2">
+            <div class="container" style="background-color: gainsboro;">
+                <div class="row gx-5  mt-5">
+                    <div class="col-md-6">
+                        <img src="image/money2.jpg" alt="" height="400px">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row gx-5 ms-5">
+                        <div class="size">
+                        <h4> Monthly Income</h4>
+                        <span class="input-group-text" id="inputGroup-sizing-sm" style="font-weight: bold;">Income</span>
+                        <input id="income" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                        <h4> Monthly Expenses</h4>
+                        <span class="input-group-text" id="inputGroup-sizing-sm" style="font-weight: bold;">Food</span>
+                        <input  id="food-expense" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                        <span class="input-group-text" id="inputGroup-sizing-sm" style="font-weight: bold;">Rent</span>
+                        <input  id="room-expense" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                        <span class="input-group-text" id="inputGroup-sizing-sm"style="font-weight: bold;">Cloths</span>
+                        <input id="travel-expense"  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                          
+                           <center> <button id="total-amount" class="calc-btn btn btn-primary" >Calculation</button></center><br>
+                            <div class="cart-item">
+                                <div class="row">
+                    
+                                   <div class="col-md-8">
+                                      <h5>Total Expenses: </h5>
+                                      <h5>Balance:</h5>
+                                   </div>
+                    
+                                   <div class="col-md-4 status">
+                                      <h5>$<span id="sub-total">0</span></h5>
+                                      <h5>$<span id="Total-balance">0</span></h5>
+                                   </div>
+                                </div>
+                             </div>
+                            <!-- For saving amount -->
+                                <label for="save" ><span style="font-size: 20px; color:  #1E90FF; font-weight: bold; ">Save:</span></label>
+                                <input id="saving-input" type="text" placeholder="saving">
+                            %
+                            <button  id="save-btn" class="btn btn-primary" >Save</button><br><br>
+                            <div class="cart-item">
+                                <div class="row">
+                    
+                                   <div class="col-md-8">
+                                      <h5>Saving Amount: </h5>
+                                      <h5> Remaining Balance:</h5>
+                                   </div>
+                    
+                                   <div class="col-md-4 status">
+                                      <h5>$<span id="saving-total">0</span></h5>
+                                      <h5>$<span id="Remaining-balance">0</span></h5>
+                                   </div>
+                                </div>
+                             </div>
+                        </div>
+                        
+                
+                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
     <script src="js/balance.js"></script>
 </body>
 </html>
